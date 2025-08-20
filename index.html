@@ -1,147 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Plans & Pricing - SmartAI</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background: #ffffff;
-      color: #1c1c1e;
-      line-height: 1.6;
-    }
-
-    header {
-      padding: 2rem;
-      text-align: center;
-      background: #f8f8f8;
-      border-bottom: 1px solid #ddd;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      color: #555;
-    }
-
-    .plans {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      padding: 3rem 2rem;
-      background: #fff;
-    }
-
-    .plan {
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 2rem;
-      max-width: 300px;
-      text-align: center;
-      background: #fefefe;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-
-    .plan h2 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .plan .price {
-      font-size: 2rem;
-      font-weight: 700;
-      margin: 1rem 0;
-    }
-
-    .plan ul {
-      text-align: left;
-      margin: 1rem 0;
-    }
-
-    .plan ul li {
-      margin-bottom: 0.5rem;
-    }
-
-    .plan button {
-      background: #10a37f;
-      color: white;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: background 0.3s ease;
-    }
-
-    .plan button:hover {
-      background: #0e8c6a;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #888;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCraft Agency - Professional Website & App Development</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-  <header>
-    <h1>SmartAI Plans & Pricing</h1>
-    <p>Choose the plan that fits your needs and start creating smarter today.</p>
-  </header>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>DevCraft</h1>
+            </div>
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#templates">Templates</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-  <section class="plans">
-    <div class="plan">
-      <h2>Free Plan</h2>
-      <p class="price">R0 / month</p>
-      <ul>
-        <li>Access to basic tools</li>
-        <li>Limited requests</li>
-        <li>Community support</li>
-      </ul>
-      <button>Get Started</button>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Professional Websites & Apps<br><span class="highlight">No Upfront Cost</span></h1>
+                <p>Get a stunning website or app for your business with our subscription model. Pay monthly, get ongoing support, and grow your business online.</p>
+                <div class="business-types">
+                    <span class="business-tag">Restaurants</span>
+                    <span class="business-tag">Guesthouses</span>
+                    <span class="business-tag">Gyms</span>
+                    <span class="business-tag">Salons</span>
+                    <span class="business-tag">Contractors</span>
+                </div>
+                <a href="#contact" class="cta-button">Get Started Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Choose Template</h3>
+                    <p>Select from our industry-specific templates designed for your business type.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Sign Contract</h3>
+                    <p>Sign a 12-month agreement with flexible monthly payments.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>We Build & Maintain</h3>
+                    <p>We build your site and provide ongoing maintenance plus 1 free update monthly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Templates Section -->
+    <section id="templates" class="templates">
+        <div class="container">
+            <h2>Choose Your Industry Template</h2>
+            <p>Click on any template to see a live preview</p>
+            <div class="template-grid">
+                <div class="template-card" data-template="restaurant">
+                    <div class="template-image">🍽️</div>
+                    <h3>Restaurant</h3>
+                    <p>Perfect for restaurants, cafes, and food services</p>
+                    <button class="preview-btn">Preview Template</button>
+                </div>
+                <div class="template-card" data-template="guesthouse">
+                    <div class="template-image">🏨</div>
+                    <h3>Guesthouse</h3>
+                    <p>Ideal for B&Bs, hotels, and accommodation</p>
+                    <button class="preview-btn">Preview Template</button>
+                </div>
+                <div class="template-card" data-template="gym">
+                    <div class="template-image">💪</div>
+                    <h3>Gym & Fitness</h3>
+                    <p>Great for gyms, fitness centers, and trainers</p>
+                    <button class="preview-btn">Preview Template</button>
+                </div>
+                <div class="template-card" data-template="salon">
+                    <div class="template-image">✂️</div>
+                    <h3>Beauty Salon</h3>
+                    <p>Perfect for salons, spas, and beauty services</p>
+                    <button class="preview-btn">Preview Template</button>
+                </div>
+                <div class="template-card" data-template="contractor">
+                    <div class="template-image">🔨</div>
+                    <h3>Contractor</h3>
+                    <p>Ideal for contractors and construction services</p>
+                    <button class="preview-btn">Preview Template</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Template Preview Modal -->
+    <div id="template-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="template-preview"></div>
+        </div>
     </div>
 
-    <div class="plan">
-      <h2>Pro Plan</h2>
-      <p class="price">R149 / month</p>
-      <ul>
-        <li>Unlimited access</li>
-        <li>Priority support</li>
-        <li>Advanced tools</li>
-      </ul>
-      <button>Upgrade Now</button>
-    </div>
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Simple, Transparent Pricing</h2>
+            <p>No upfront costs. Just monthly payments for 12 months.</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <div class="price">R1,500<span>/month</span></div>
+                    <ul>
+                        <li>5-page website</li>
+                        <li>Mobile responsive</li>
+                        <li>Basic SEO</li>
+                        <li>1 free update/month</li>
+                        <li>Email support</li>
+                    </ul>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Professional</h3>
+                    <div class="price">R2,500<span>/month</span></div>
+                    <ul>
+                        <li>10-page website</li>
+                        <li>Mobile responsive</li>
+                        <li>Advanced SEO</li>
+                        <li>2 free updates/month</li>
+                        <li>Priority support</li>
+                        <li>Social media integration</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">R4,000<span>/month</span></div>
+                    <ul>
+                        <li>Unlimited pages</li>
+                        <li>Mobile responsive</li>
+                        <li>Premium SEO</li>
+                        <li>Unlimited updates</li>
+                        <li>24/7 support</li>
+                        <li>E-commerce ready</li>
+                        <li>Analytics dashboard</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="plan">
-      <h2>Team Plan</h2>
-      <p class="price">R399 / month</p>
-      <ul>
-        <li>Up to 5 users</li>
-        <li>Collaboration tools</li>
-        <li>Admin dashboard</li>
-      </ul>
-      <button>Start Team Trial</button>
-    </div>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get Your Website Started</h2>
+                    <p>Ready to grow your business online? Contact us today for a free consultation.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <strong>Email:</strong> hello@devcraft.agency
+                        </div>
+                        <div class="contact-item">
+                            <strong>Phone:</strong> +27 11 123 4567
+                        </div>
+                        <div class="contact-item">
+                            <strong>Location:</strong> Johannesburg, South Africa
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="business">Business Type</label>
+                            <select id="business" name="business" required>
+                                <option value="">Select your business type</option>
+                                <option value="restaurant">Restaurant</option>
+                                <option value="guesthouse">Guesthouse</option>
+                                <option value="gym">Gym</option>
+                                <option value="salon">Salon</option>
+                                <option value="contractor">Contractor</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell us about your project</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    &copy; 2025 SmartAI. All rights reserved.
-  </footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DevCraft Agency</h3>
+                    <p>Professional website and app development for small businesses.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#templates">Website Development</a></li>
+                        <li><a href="#templates">App Development</a></li>
+                        <li><a href="#pricing">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#home">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DevCraft Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
